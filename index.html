@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<Center><h1>The Ultimate Calculator</h1></Center>
+  
+  <hr>
+  <!DOCTYPE html>
+  <html lang="en">
+  <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+      <style>
+          body {
+              margin: 0; 
+              height: 100vh; 
+              background: linear-gradient(#87CEEB 30%, #FFFFFF 50%); /* 
+          }
+      </style>
+  </head>
+  <body>
+
+
+  </body>
+  </html>
+
+<br>
+
+<Center><b> What kind of calculator do you want?</b></Center>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Box</title>
+    <style>
+        .interactive-box {
+            position: relative;
+            display: inline-block;
+            padding: 10px;
+            background-color: #3498db;
+            color: #fff;
+            cursor: pointer;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+            z-index: 1;
+        }
+
+        .dropdown-content a {
+            color: #333;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+
+        .dropdown-content a:hover {
+            background-color: #ddd;
+        }
+    </style>
+</head>
+<body>
+<br>
+   <center> <div class="interactive-box" onclick="toggleDropdown()">
+        Click me!
+        <div class="dropdown-content" id="dropdown">
+            <a href="Multiplication.html">Multiplication</a>
+            <a href="Profit.html">Profit</a>
+            <a href="FC.html">Fahrenheit to celsius</a>
+            <a href="CF.html">Degrees to fahrenheit</a>
+            <a href="Area.html">Area and perimeter </a>
+            <a href="Circ.html"> Circle area  </a>
+            <a href="Dollar.html"> Dollars to euros </a>
+          
+
+
+
+
+
+          
+            <!-- Add more answers as needed -->
+        </div>
+    </div> </center>
+
+    <script>
+        function toggleDropdown() {
+            var dropdown = document.getElementById("dropdown");
+            dropdown.style.display = (dropdown.style.display === "block") ? "none" : "block";
+        }
+
+        // Close the dropdown if the user clicks outside of it
+        window.onclick = function(event) {
+            if (!event.target.matches('.interactive-box')) {
+                var dropdown = document.getElementById("dropdown");
+                if (dropdown.style.display === "block") {
+                    dropdown.style.display = "none";
+                }
+            }
+        }
+    </script>
+  <a href="test.html">OGPro11</a>
+
+</body>
+</html>
+<br>
+<br>
+<br>
+<br>
+<br>
+  <Center><img src="Cal.webp" alt="Description of the image" width="200" height="100"></Center>

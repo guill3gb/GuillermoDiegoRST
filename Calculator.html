@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Hello World!</title>
+    <!-- linking to PyScript assets -->
+    <link rel="stylesheet" href="https://pyscript.net/alpha/pyscript.css" />
+    <script defer src="https://pyscript.net/alpha/pyscript.js"></script>
+  </head>
+  <body>
+  <!-- Put Python code inside the the <py-script> tag -->
+    <py-script>
+              user_letter = input("How may I help you today: ")
+              if user_letter.upper() == 'T':
+                  try:
+                      num1 = float(input("Enter the first number: "))
+                      num2 = float(input("Enter the second number: "))
+                      result = num1 * num2
+                      print(f"The result of multiplying {num1} and {num2} is: {result}")
+                  except ValueError:
+                      print("Invalid input. Please enter valid numerical values.")
+              else:
+                  print("-")
+
+              if user_letter.upper() == 'TX':
+                  try:
+                      amount = float(input('Enter an amount before tax: '))
+                      new = amount*1.13
+                      print(f'The new amount after tax is {new}.')
+                  except ValueError:
+                      print('Invalid input.')
+              else:
+                  print('-')
+
+              if user_letter.upper() == 'P':
+                  try:
+                      revenue = float(input('Enter your revenue: '))
+                      cost = float(input('Enter your cost: '))
+                      profit = revenue - cost
+                      print(f'Your profit margin is {profit}.')
+                  except ValueError: 
+                      print('Invalid input.')
+              else:
+                  print('-')
+
+              if user_letter.upper() == 'TD':
+                  try: 
+                      fah = float(input('Enter a temperature in fahrenheit: '))
+                      deg = (fah - 32) *(5/9)
+                      deg = round(deg,2)
+                      print(f'Your temperature in degrees celsius is {deg}.')
+                  except ValueError:
+                      print('Invalid input.')
+              else:
+                  print('-')
+
+              if user_letter.upper() == 'TF':
+                  try:
+                      deg = float(input('Enter a temperature in degrees: '))
+                      fah = deg*(9/5)+32
+                      fah = round(fah,2)
+                      print(f'Your temperature in fahrenheit is {fah}.')
+                  except ValueError:
+                      print('Invalid input.')
+              else:
+                  print('-')
+
+              if user_letter.upper() == 'SL':
+                  try: 
+                      side1 = float(input('Enter the value for side length 1: '))
+                      side2 = float(input('Enter the value for side length 2: '))
+                      area = side1*side2
+                      perimeter = 2*side1 + 2*side2
+                      area = round(area,2)
+                      perimeter = round(perimeter,2)
+                      print(f'Your area is {area} and your perimeter is {perimeter}.')
+                  except ValueError:
+                      print('Invalid input.')
+              else:
+                  print('-')
+
+              if user_letter.upper() == 'C':
+                  try:
+                      rad = float(input('Enter a radius: '))
+                      carea = 3.14*(rad**2)
+                      print(f'The area of the circle is {carea}.')
+                  except ValueError:
+                      print('Invalid input.')
+              else:
+                  print('-')
+
+              if user_letter.upper()=='ME':
+                  try:
+                      dol = float(input('Enter your amount in dollars: '))
+                      euro = dol*0.68
+                      print(f'Your amount in euros is {euro}.')
+                  except ValueError:
+                      print('Invalid input.')
+              else:
+                  print('-')
+
+    </py-script>
+  </body>
+</html>
