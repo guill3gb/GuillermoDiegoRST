@@ -94,6 +94,7 @@
                   try:
                       dol = float(input('Enter your amount in dollars: '))
                       euro = dol*0.68
+                      euro = round(euro,2)
                       print(f'Your amount in euros is {euro}.')
                   except ValueError:
                       print('Invalid input.')
